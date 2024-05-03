@@ -44,4 +44,16 @@ return {
       },
     },
   },
+  {
+    "AstroNvim/astrolsp",
+    ---@type AstroLSPOpts
+    opts = {
+      mappings = {
+        n = {
+          ["<C-k>"] = { function() vim.lsp.buf.hover() end, desc = "Show hover diagnostics" },
+          ["<C-l>"] = { function() vim.diagnostic.open_float() end, desc = "Hover diagnostics" },
+        },
+      },
+    },
+  },
 }
