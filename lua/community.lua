@@ -14,4 +14,6 @@ return {
 
   -- Languages
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.cs" },
+  { import = "astrocommunity.pack.typescript" },
 }
