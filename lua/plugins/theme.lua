@@ -1,8 +1,6 @@
 return {
   "goolord/alpha-nvim",
-  -- cmd = "Alpha",
   opts = function(_, opts)
-    -- local dashboard = require "alpha.themes.dashboard"
     opts.section.header.val = {
       "................................ ....... ....,;;::;;,................................",
       ".........................',;. ........  ..;lddoodddddolc:,...........................",
@@ -46,18 +44,6 @@ return {
     }
 
     opts.section.buttons.val = {}
-    -- dashboard.section.header.opts.hl = "DashboardHeader"
-
-    -- local button = require("astronvim.utils").alpha_button
-    -- dashboard.section.buttons.val = {
-    --   button("LDR n", "  New File  "),
-    --   button("LDR f o", "  Recents  "),
-    --   button("LDR S l", "  Last Session  "),
-    -- }
-    --
-    -- dashboard.config.layout[1].val = vim.fn.max { 1, vim.fn.floor(vim.fn.winheight(0) * 0.2) }
-    -- dashboard.config.layout[3].val = 2
-    -- dashboard.config.opts.noautocmd = true
     return opts
   end,
 }

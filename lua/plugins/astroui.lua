@@ -1,44 +1,36 @@
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
--- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
---       as this provides autocomplete and documentation while editing
 
 ---@type LazySpec
 return {
   "AstroNvim/astroui",
   ---@type AstroUIOpts
   opts = {
-    -- change colorscheme
     colorscheme = "astrodark",
-    -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
-      init = { -- this table overrides highlights in all themes
-        -- Normal = { bg = "#000000" },
+      init = {
         Normal = {
-          guibg = NONE,
-          bgui = NONE,
-          fgui = NONE,
-          ctermbg = NONE,
-          ctermfb = NONE,
-          gui = NONE,
+          guibg = nil,
+          bgui = nil,
+          fgui = nil,
+          ctermbg = nil,
+          ctermfb = nil,
+          gui = nil,
         },
         NormalNC = {
-          guibg = NONE,
+          guibg = nil,
         },
         NeoTreeNormal = {
-          guibg = NONE,
+          guibg = nil,
         },
         NeoTreeNormalNC = {
-          guibg = NONE,
+          guibg = nil,
         },
       },
     },
   },
-  astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
-    -- Normal = { bg = "#000000" },
-    -- Icons can be configured throughout the interface
+  astrotheme = {
     icons = {
-      -- configure the loading of the lsp in the status line
       LSPLoading1 = "⠋",
       LSPLoading2 = "⠙",
       LSPLoading3 = "⠹",
